@@ -1,61 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vikram Mahto - UI / UX Designer | Frontend Developer</title>
+  <meta name="description" content="Vikram Mahto is a Web and Graphic Designer and open-source content creator.">
+  <title>Vikram Mahto - Web and Graphics Designer</title>
   <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/bf0298c4da.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <div class="nav-container">
-    <div class="wrapper">
-      <nav>
-        <div class="logo">
-          Vikram Kumar
-        </div>
-        <ul class="nav-items">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Freelance</a></li>
-          <li><a href="#">Free Downloads</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#footer-cta" class="nav-btn">Contact</a></li>
-        </ul>
+  <header>
+    <div class="nav-container">
+      <nav class="navigation">
+        <div class="nav-logo">Vikram Mahto</div>
+        <input type="checkbox" name="" id="navMenu">
+        <label for="navMenu" class="hamburger">
+          <i class="fas fa-bars"></i>
+        </label>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-list-items"><a href="#">Home</a></li>
+            <li class="nav-list-items"><a href="#tools">Tools I Use</a></li>
+            <li class="nav-list-items"><a href="#projects">Projects</a></li>
+            <li class="nav-list-items"><a href="#">Hire me</a></li>
+          </ul>
       </nav>
     </div>
-  </div>
-  <section class="header-container">
-    <div class="wrapper">
-      <header>
+  </header>
+  <section class="section hero-section">
+    <div class="hero-container">
         <div class="hero-text">
-          <h1>Hey! I'm Vikram Mahto</h1>
-          <p>I’m a UI / UX designer, frontend developer and open-source content creator.</p>
-          <p class="profile-links">Find me on <a href="#">Behance</a>, <a href="#">Twitter</a> and <a href="#">GitHub</a>.</p>
+          <h1 class="hero-heading">👋&nbsp;Hey! I'm Vikram Mahto</h1>
+          <p class="hero-paragraph">I’m a Web and Graphics Designer, front-end developer and open-source content creator.</p>
+          <p class="hero-paragraph">Find me on <a href="#">GitHub</a>, <a href="#">Twitter</a> and <a href="#">Behance</a>.
+          </p>
         </div>
         <div class="hero-img">
           <img src="img/avatar.svg" alt="Vikram-Mahto-Avatar">
         </div>
-      </header>
     </div>
   </section>
-  <section class="tools">
-    <h1 class="section-heading">Things I often work with</h1>
-    <div class="wrapper">
-      <ul>
-        <li><img src="img/html.svg" alt="html-logo"></li>
-        <li><img src="img/css.svg" alt="css-logo"></li>
-        <li><img src="img/js.svg" alt="js-logo"></li>
-        <li><img src="img/bootstrap.svg" alt="bootstrap-logo"></li>
-        <li><img src="img/figma.svg" alt="figma-logo"></li>
-        <li><img src="img/photoshop.svg" alt="photoshop-logo"></li>
+  <div class="section-divider"></div>
+  <section class="section tools-section" id="tools">
+    <h1 class="section-heading">Things I often work with <br><i class="mute fas fa-chevron-down"></i></h1>
+    <div class="tools-wrapper">
+      <ul class="tools-list">
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/html.svg" alt="html-logo">
+            <figcaption>HTML</figcaption>
+          </figure>
+        </li>
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/css.svg" alt="css-logo">
+            <figcaption>CSS</figcaption>
+          </figure>
+        </li>
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/js.svg" alt="js-logo">
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </li>
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/bootstrap.svg" alt="bootstrap-logo">
+            <figcaption>Bootstrap</figcaption>
+          </figure>
+        </li>
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/figma.svg" alt="figma-logo">
+            <figcaption>Figma</figcaption>
+          </figure>
+        </li>
+        <li class="tools-list-items">
+          <figure>
+            <img src="img/photoshop.svg" alt="photoshop-logo">
+            <figcaption>Adobe Photoshop</figcaption>
+          </figure>
+        </li>
       </ul>
     </div>
-    <span>and few others as needed...</span>
+    <span class="section-description mute">and few others as needed...</span>
   </section>
-  <section class="downloads">
-    <h1 class="section-heading">Free Downloads</h1>
+  <div class="section-divider"></div>
+  <section class="section" id="projects">
+    <h1 class="section-heading">Projects</h1>
     <div class="card-container">
       <div class="card">
         <div class="card-header">
@@ -63,7 +98,7 @@
         </div>
         <div class="card-body">
           <h4 class="post-title">Portfolio Landing Page UI Design for Web Designers / Devs</h4>
-          <h5 class="post-tag">UI / UX</h5>
+          <span class="post-tag">UI / UX</span>
         </div>
       </div>
       <div class="card">
@@ -89,26 +124,24 @@
       <button>All Free Downloads&nbsp;<i class="fas fa-arrow-right"></i></button>
     </div>
   </section>
-
-  <section class="footer-cta" id="footer-cta">
-    <div class="footer-container">
-      <div class="footer-cta-txt">
-        <h1>Do you’ve any opening?<br> I’m looking for a full-time job.</h1>
-      </div>
-      <div class="footer-cta-btn"><a href="#" target="_blank">Download My Resume</a></div>
+  <section class="footer-cta section">
+    <div class="footer-cta-txt">
+      <h1>Do you like my open-source contributions? Support me.</h1>
+    </div>
+    <div class="footer-cta-btn">
+      <a href="https://www.buymeacoffee.com/vikram" target="_blank"><img src="img/buy-me-a-coffee.png" alt=""></a>
     </div>
   </section>
-  <footer class="footer-section">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Behance</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      <p class="copyright">Copyright © 2021 - All rights reserved.</p>
+  <footer class="footer-section section">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Behance</a></li>
+      <li><a href="#">Hire me</a></li>
+    </ul>
+    <p class="copyright">Copyright © 2021 - All rights reserved.</p>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 
 </html>
