@@ -154,6 +154,7 @@ body{
     display: block;
     right: 0%;
 }
+
 .hamburger{
     background-color: transparent;
     border: none;
@@ -253,6 +254,12 @@ body{
 }
 .post-title{
     line-height: normal;
+}
+.post-title a{
+    color: var(--primary-text);
+}
+.post-title a:hover{
+    text-decoration: underline;
 }
 .post-tag{
     margin-top: 10PX;
