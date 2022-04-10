@@ -12,23 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bf0298c4da.js" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <header>
+  <header class="sticky">
     <div class="nav-container">
       <nav class="navigation">
         <div class="nav-logo">Vikram Mahto</div>
-        <input type="checkbox" name="" id="navMenu">
+        <input type="checkbox" name="menu-toggler" id="navMenu">
         <label for="navMenu" class="hamburger">
-          <i class="fas fa-bars"></i>
+          <i class="fa fa-bars" id="menu-toggler-icon"></i>
         </label>
-        <ul class="nav-list" id="nav-list">
-          <li class="nav-list-items"><a href="https://vikrammahto.github.io/">Home</a></li>
-          <li class="nav-list-items"><a href="#tools">Tools I Use</a></li>
-          <li class="nav-list-items"><a href="#recommend">I Recommend</a></li>
-          <li class="nav-list-items"><a href="https://twitter.com/here_vikram" target="_blank">Hire me</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="#tools">Tools I Use</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="https://twitter.com/here_vikram" target="_blank">Hire me</a></li>
         </ul>
       </nav>
     </div>
@@ -96,16 +95,17 @@
     <span class="section-description mute">and few others as needed...</span>
   </section>
   <div class="section-divider"></div>
-  <section class="section" id="recommend">
-    <h1 class="section-heading">My Recommendation that I Personally Used</h1>
-    <div class="card-container">  
+  <section class="section" id="projects">
+    <h1 class="section-heading">Projects</h1>
+    <div class="card-container">
       <div class="card">
         <div class="card-header">
           <a href="https://www.bluehost.com/track/inputblogger/github" target="_blank"><img src="img/hosting1.png"
               alt="Bluehost"></a>
         </div>
         <div class="card-body">
-          <h4 class="post-title"><a href="https://www.bluehost.com/track/inputblogger/github" target="_blank">Bluehost - Best Web
+          <h4 class="post-title"><a href="https://www.bluehost.com/track/inputblogger/github" target="_blank">Bluehost -
+              Best Web
               Hosting for WordPress Blogs/Sites</a></h4>
           <span class="post-tag">Web Hosting</span>
         </div>
@@ -127,21 +127,11 @@
           <a href="https://amzn.to/3E2hdk6" target="_blank"><img src="img/amazon.png" alt="amazon"></a>
         </div>
         <div class="card-body">
-          <h4 class="post-title"><a href="https://amzn.to/3E2hdk6" target="_blank">Amazon.in - Best Online Shopping Site</a></h4>
+          <h4 class="post-title"><a href="https://amzn.to/3E2hdk6" target="_blank">Amazon.in - Best Online Shopping
+              Site</a></h4>
           <h5 class="post-tag">Recommendation</h5>
         </div>
       </div>
-    </div>
-    <div class="downloads-btn">
-      <a href="https://twitter.com/here_vikram" target="_blank"><button>Contact for Free Web Consultation&nbsp;<i class="fas fa-arrow-right"></i></button></a>
-    </div>
-  </section>
-  <section class="footer-cta section">
-    <div class="footer-cta-txt">
-      <h1>Do you like my open-source contributions? Support me.</h1>
-    </div>
-    <div class="footer-cta-btn">
-      <a href="https://www.buymeacoffee.com/vikram" target="_blank"><img src="img/buy-me-a-coffee.png" alt=""></a>
     </div>
   </section>
   <footer class="footer-section section">
@@ -154,6 +144,7 @@
     </ul>
     <p class="copyright">Copyright © 2021 - All rights reserved.</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
