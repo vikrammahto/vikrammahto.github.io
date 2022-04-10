@@ -1,1 +1,3 @@
-# vikrammahto.github.io
+# Persoanl portfolio
+
+Portfolio - Made with HTML, CSS and JavaScript.
